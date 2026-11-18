@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CritiCrime – ¿Hasta dónde llega el true crime?</title>
+  <link rel="icon" href="./Imgs/logo-sfondo-nero.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#inicio" aria-label="CritiCrime, inicio">
+    <img src="./Imgs/logo-sfondo-nero.png" alt="Logo de CritiCrime" width="56" height="56">
+  </a>
+  <button class="menu-btn" aria-label="Abrir el menú" aria-expanded="false" aria-controls="nav">Menú</button>
+  <nav id="nav" class="nav">
+    <a href="#debate">El debate</a>
+    <a href="#perspectivas">Perspectivas</a>
+    <a href="#participa">Participa</a>
+    <a class="cta" href="https://www.instagram.com/criti_crime/">Síguenos</a>
+  </nav>
+</header>
+
+<main>
+  <section id="inicio" class="hero">
+    <div class="hero-text">
+      <h1><span class="w-light">CRITI</span><span class="w-bold">CRIME</span></h1>
+      <p class="lead"><span class="lead-q">¿Dónde está el límite ético del consumo de true crime?</span><span class="lead-sub">Un proyecto universitario para debatirlo.</span></p>
+    </div>
+    <div class="calendar" role="group" aria-label="Calendario: mesa redonda el 30 de noviembre de 2026">
+      <div class="cal-head" id="cal-title">noviembre 2026</div>
+      <div class="cal-grid" id="cal-grid"></div>
+      <div class="cal-count">
+        <p>Faltan para la mesa redonda</p>
+        <div class="units">
+          <div><strong id="cd-d">0</strong>días</div>
+          <div><strong id="cd-h">0</strong>horas</div>
+          <div><strong id="cd-m">0</strong>minutos</div>
+        </div>
+      </div>
+    </div>
+    <a class="btn" href="https://www.youtube.com/@UniversidaddeZaragoza_es" target="_blank" rel="noopener">Sigue nuestra mesa redonda del 30/11</a>
+  </section>
+
+  <div class="tape" aria-hidden="true"></div>
+
+  <section id="debate" class="section">
+    <h2>El debate</h2>
+
+    <ul class="debate-points reveal">
+      <li>Series, documentales, podcasts y vídeos han convertido los crímenes reales en <mark>entretenimiento</mark>.</li>
+      <li>Pero detrás de cada caso hay <mark>víctimas, familias y comunidades reales</mark>, y no siempre las tenemos en cuenta cuando consumimos su historia.</li>
+      <li><strong>CritiCrime</strong> nace para abrir una pregunta: ¿dónde está el límite ético del consumo de <em>true crime</em>? Entre <mark>informar</mark> y <mark>entretener</mark> hay una línea cada vez más difusa, y queremos pensarla juntos.</li>
+    </ul>
+
+
+    <div class="debate-media reveal">
+      <img src="./Imgs/infografia-debate.png" alt="Infografía: la línea entre informar y entretener y cuatro preguntas para el debate">
+    </div>
+
+  </section>
+
+  <section id="perspectivas" class="section dark">
+    <h2>Perspectivas</h2>
+    <h3 class="subhead">Invitados a la mesa redonda</h3>
+    <div class="guests">
+      <figure class="guest">
+        <div class="guest-photo"><img src="./Imgs/chemaaranda2.webp" alt="Dr. Chema Aranda Echeverría"></div> 
+        <figcaption><strong>Dr. Chema Aranda Echeverría</strong>Sociólogo e investigador de ciencias sociales</figcaption>
+      </figure>
+      <figure class="guest">
+        <div class="guest-photo"><img src="./Imgs/patriciagascon.png" alt="Dra. Patricia Gascón Vera"></div> 
+        <figcaption><strong>Dra. Patricia Gascón Vera</strong>Periodista y profesora de deontología</figcaption>
+      </figure>
+      <figure class="guest">
+        <div class="guest-photo"><img src="./Imgs/silvialadrero.png" alt="Dra. Nombre Apellido"></div> 
+        <figcaption><strong>Dra. Silvia Ladrero</strong>Periodista y criminóloga</figcaption>
+      </figure>
+      <figure class="guest">
+        <div class="guest-photo"><img src="./Imgs/josemariaotin.jpg" alt="Dr. Nombre Apellido"></div> 
+        <figcaption><strong>Dr.  José María Otín del Castillo </strong>Inspector de la Policía Nacional, criminólogo y psicólogo</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="tape" aria-hidden="true"></div>
+
+  <section id="participa" class="section">
+    <h2>Participa</h2>
+    <p class="form-intro">Envíanos tu opinión o una pregunta para la mesa redonda!</p>
+    <form id="contact-form" novalidate>
+      <label for="name">Nombre</label>
+      <input id="name" name="name" type="text" autocomplete="name" required>
+      <small class="err" id="err-name"></small>
+
+      <label for="email">Correo electrónico</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+      <small class="err" id="err-email"></small>
+
+      <label for="msg">Tu opinión o pregunta</label>
+      <textarea id="msg" name="msg" rows="5" required></textarea>
+      <small class="err" id="err-msg"></small>
+
+      <button class="btn" type="submit">Enviar</button>
+      <p class="ok" id="ok" role="status" hidden>Enviado. Gracias por sumarte al debate.</p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer" id="redes">
+  <p class="copy">© 2026 CritiCrime – Proyecto estudiantil de la Universidad de Zaragoza</p>
+</footer>
+
+<!-- Aviso de Instagram: aparece abajo a la derecha y se queda hasta que se cierra -->
+<aside class="ig-toast" id="ig-toast" role="region" aria-label="Aviso de Instagram" hidden>
+  <div class="ig-tape" aria-hidden="true"></div>
+  <button class="ig-close" type="button" aria-label="Cerrar el aviso">&times;</button>
+  <div class="ig-body">
+    <p class="ig-title">¡Síguenos en Instagram!</p>
+    <p class="ig-text">Visita nuestra página y no te pierdas las novedades de la mesa redonda del 30/11.</p>
+    <a class="btn" href="https://www.instagram.com/criti_crime/" target="_blank" rel="noopener">Ir a Instagram</a>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
